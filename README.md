@@ -63,7 +63,7 @@ The module decodes the 3-bit `operand` input to route the calculated value to th
 
 
 
-**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A \& \ B$).
+**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A . \ B$).
 
 
 **3'b101 (Bitwise OR):** Computes the bitwise OR logic between A and B ($A \ | \ B$).
