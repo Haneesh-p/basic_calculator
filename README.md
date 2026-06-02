@@ -8,15 +8,12 @@ This module implements a synthesizable, synchronous 8-bit **ALU (Arithmetic Logi
 
 ### Key Features
 
-* 
 **Synchronous Execution:** All mathematical and logical operations are registered and synchronized to the rising edge of the master clock.
 
 
-* 
 **Versatile Instruction Set:** Supports basic arithmetic (addition, subtraction, multiplication, division), bitwise logic (AND, OR), and bit manipulation (left shift, right shift).
 
 
-* 
 **Safe Fallback Design:** Features a default case state that clears the output to zero if an invalid or undefined operand code is encountered.
 
 
@@ -25,22 +22,20 @@ This module implements a synthesizable, synchronous 8-bit **ALU (Arithmetic Logi
 
 ### Port Descriptions
 
-* **clk** (Input, 1-bit): Master Clock signal. Operations are evaluated and registered on its rising edge.
+ **clk** (Input, 1-bit): Master Clock signal. Operations are evaluated and registered on its rising edge.
 
 
-* 
+ 
 **A** (Input, 8-bit): Primary 8-bit parallel data input operand.
 
 
-* 
+ 
 **B** (Input, 8-bit): Secondary 8-bit parallel data input operand.
 
-
-* 
+ 
 **operand** (Input, 3-bit): Operation selection bus used to decide the functioning mode of the calculator.
 
-
-* 
+ 
 **result** (Output, 8-bit): Registered parallel data output bus displaying the calculation outcome.
 
 
@@ -68,7 +63,7 @@ The module decodes the 3-bit `operand` input to route the calculated value to th
 
 
 * 
-**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A \ \& \ B$).
+**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A \ & \ B$).
 
 
 * 
