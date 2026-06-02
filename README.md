@@ -46,39 +46,35 @@ This module implements a synthesizable, synchronous 8-bit **ALU (Arithmetic Logi
 
 The module decodes the 3-bit `operand` input to route the calculated value to the `result` register:
 
-* 
+
 **3'b000 (Addition):** Adds operand A and operand B ($A + B$).
 
 
-* 
+ 
 **3'b001 (Subtraction):** Subtracts operand B from operand A ($A - B$).
 
 
-* 
+ 
 **3'b010 (Multiplication):** Multiplies operand A by operand B ($A \times B$).
 
 
-* 
+ 
 **3'b011 (Division):** Divides operand A by operand B ($A / B$).
 
 
-* 
-**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A \ & \ B$).
+
+**3'b100 (Bitwise AND):** Computes the bitwise AND logic between A and B ($A \& \ B$).
 
 
-* 
 **3'b101 (Bitwise OR):** Computes the bitwise OR logic between A and B ($A \ | \ B$).
 
 
-* 
 **3'b110 (Logical Shift Left):** Shifts operand A left by 1 bit position ($A \ll 1$).
 
 
-* 
 **3'b111 (Logical Shift Right):** Shifts operand A right by 1 bit position ($A \gg 1$).
 
 
-* 
 **Default State:** Outputs zero (`8'b0`) for any unhandled execution anomalies.
 
 
